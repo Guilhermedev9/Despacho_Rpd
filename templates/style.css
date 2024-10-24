@@ -21,7 +21,7 @@ header{
     align-items: center;
     justify-content: center; 
     background: #000223  !important;
-    height: 80px;
+    height: 100px;
 }
 /*itens nav*/
 a{
@@ -79,7 +79,7 @@ nav>div>ul>li>a:hover{
     }
 }
 .nav_menu li a {
-    padding: 15px 10px;
+    padding: 15px 5px;
 }
 #megamenu > ul > li > a:after {
     content: '';
@@ -98,15 +98,18 @@ nav>div>ul>li>a:hover{
 /**/
 /* principal*/
 #main-box-home{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: auto;   
-    background: #000223  !important;
-    padding-top: 60px;
+    background-color: #000223;
 }
-
+#conteudos{
+    display: flex; 
+    align-items: center; 
+   justify-content: center;
+   justify-content: space-evenly;
+   margin: auto;
+   max-width: 100%;
+   width: 1496px;
+   height: 600px;
+}
 /* itens*/
 #box-itens-txt{
     color: #fff;
@@ -141,8 +144,8 @@ nav>div>ul>li>a:hover{
     margin-top: 100p;
 }
 #img-carro{
-    width: 450px;
-    height: 450px;
+    max-width: 500px;
+    height: 500px;
 }
 /**/
 
