@@ -62,6 +62,11 @@ ul{
     font-size: 13px;
 }
 /**/
+
+nav>div>ul>li>a:hover{
+    color: #848688;
+}
+
 /* movement itens nav */
 @media (min-width: 769px) {
     .nav_menu ul li a {
@@ -82,9 +87,10 @@ ul{
     left: 50%;
     transform: translateX(-50%);
     bottom: 0px;
-    background: #848688
+    background: #848688;
 }
 #megamenu > ul > li > a:hover:after {
     width: 50px
 }
 /**/
+
