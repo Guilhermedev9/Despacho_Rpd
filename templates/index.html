@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <header>
+    <header id="header-main">
         <div class="box_logo">
             <a href="#" class="link_logo">
                <img src="imgs/logo_despacho_rapido.png" id="logo">
@@ -85,5 +85,73 @@
             </div>
         </div>
     </div>
+    <!-- segunda sessão-->
+    <section id="second-section">
+        <header id="header-second-section">
+
+                <p id="txt-second-layout">Faça agora 
+                    <span style="font-weight: 600;">sua cotação </span>
+                    de envio online</p>
+            <div>
+                <div id="box-caixas-header">
+                    <div class="itens-caixas caixas1-3">
+
+                    </div>
+                    <div class="itens-caixas caixas2-4">
+
+                    </div>
+                    <div class="itens-caixas caixas1-3" >
+
+                    </div>
+                    <div class="itens-caixas caixas2-4">
+                    
+                    </div>
+                </div>
+                <div id="box-txt-bottom">
+                    <p id="txt-bottom">*CONSULTE AS CIDADES COM PRAZO DE ENVIO 24H</p>
+                </div>
+            </div>
+        </header>
+        
+       
+    <div class="container">
+        <div class="button-group">
+            <button class="option active">ENVIO ATE 40KG</button>
+            <button class="option">ENVIO + DE 40KG</button>
+            </div>
+        
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Cidade de origem" required>
+                    <div class="toggle-group">
+                        <label><input type="radio" name="origem" checked> Balcão</label>
+                        <label><input type="radio" name="origem"> Coleta</label>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <input type="text" placeholder="Cidade de destino" required>
+                    <div class="toggle-group">
+                        <label><input type="radio" name="destino" checked> Balcão</label>
+                        <label><input type="radio" name="destino"> Coleta</label>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <input type="text" placeholder="Tamanho da embalagem">
+                </div>
+        
+                <div class="form-group">
+                    <input type="number" placeholder="Valor da NF">
+                </div>
+        
+                <div class="form-group">
+                    <input type="text" placeholder="Digite seu CPF/CNPJ">
+                </div>
+        
+                <button type="submit" class="submit-button">SIMULAR ENVIO</button>
+            </form>
+        
+         </section> 
 </body>
 </html>
