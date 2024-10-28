@@ -71,30 +71,11 @@ nav>div>ul>li>a:hover{
 nav>div>ul>li>a:hover{
     color: #848688;
 }
-@media (min-width: 769px) {
-    .nav_menu ul li a {
-        transition: 0.3s all;
-        font-size: 15px;
-        position: relative;
-    }
-}
+
 .nav_menu li a {
     padding: 15px 5px;
 }
-#megamenu > ul > li > a:after {
-    content: '';
-    width: 0px;
-    height: 2px;
-    position: absolute;
-    transition: 0.3s all;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0px;
-    background: #848688;
-}
-#megamenu > ul > li > a:hover:after {
-    width: 50px
-}
+
 /**/
 /* principal*/
 #main-box-home{
@@ -205,47 +186,75 @@ nav>div>ul>li>a:hover{
 
 
 .container {
-    background-color: white;
-    border-radius: 10px;
-    width: 500px;
-    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 400px;
+    height: 360px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
-
-.button-group {
+#all-box{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.box-button-form{
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 20px;
+    margin-top: -13px;
+}
+.box-buttons-comimg{
+display: flex;
+align-items: center;
+gap: 5px;
+font-size: 11px;
 }
 
-.button-group .option {
+
+.box-button-form #button2 {
     background-color: #d12f31;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 11px 15px;
+    border-radius: 20px;
     cursor: pointer;
+    
 }
 
-.button-group .option.active {
+.box-button-form #button1 {
+    color: white;
+    border: none;
+    padding: 12px 17px;
+    border-radius: 20px;
+    cursor: pointer;
     background-color: #0077b6;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
-
+.origem-destino{
+    width: 200px;
+}
 input[type="text"], input[type="number"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    padding: 12px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 13px;
+    border: none;
 }
 
-
-
+.origem-destino{
+    width: 60%;
+}
 .toggle-group label {
     cursor: pointer;
+    font-size: 10px;
 }
 
 .submit-button {
@@ -253,32 +262,12 @@ input[type="text"], input[type="number"] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 50%;
+    margin-left: 40px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-.estimate {
-    margin-top: 20px;
-}
-
-.estimate .price {
-    font-size: 24px;
-    color: #0077b6;
-    font-weight: bold;
-}
-
-.info {
-    margin-top: 20px;
-    text-align: left;
-}
-
-.info ul {
-    padding-left: 20px;
-}
-
-.info ul li {
-    font-size: 12px;
-    color: #555;
-}
