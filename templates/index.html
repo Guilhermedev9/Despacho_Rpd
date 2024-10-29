@@ -130,7 +130,7 @@
             </div>
         
                 <form>
-                    <div class="form-group">
+                    <div class="form-group" id="group-1">
                         <input type="text" placeholder="Cidade de origem" class="origem-destino">
                         <div class="toggle-group">
                             <label><input type="radio" name="origem" checked> Balcão</label>
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 
-                    <div class="form-group">
+                    <div class="form-group" id="group-2">
                         <input type="text" placeholder="Cidade de destino" class="origem-destino" required>
                         <div class="toggle-group">
                             <label><input type="radio" name="destino" checked> Balcão</label>
@@ -146,19 +146,19 @@
                         </div>
                     </div>
                 
-                    <div class="form-group">
-                        <input type="text" placeholder="Tamanho da embalagem">
+                    <div class="form-group" id="group-3">
+                        <input type="text" placeholder="Tamanho da embalagem" id="input-3" >
+                        <input type="number" placeholder="Valor da NF" id="valor-nf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" id="icon-plus" style="fill: #FFFFFF;">
+                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                          </svg>
                     </div>
                 
                     <div class="form-group">
-                        <input type="number" placeholder="Valor da NF">
+                        <input type="text" style="width: 310px;" placeholder="Digite seu CPF/CNPJ">
                     </div>
                 
-                    <div class="form-group">
-                        <input type="text" style="width: 300px;" placeholder="Digite seu CPF/CNPJ">
-                    </div>
-                
-                    <button type="submit"  class="submit-button">SIMULAR ENVIO</button>
+                    <button type="submit"  class="submit-button" id="">SIMULAR ENVIO</button>
                 </form>
         </div>
     </div>
