@@ -21,7 +21,7 @@
         <nav class="nav_menu">
             <div class="header_buttons">
 
-                <ul>
+                <ul id="ul-head">
                    <li>
                        <a href="">SIMULAR ENVIO</a>
                    </li>
@@ -95,7 +95,10 @@
             <div>
                 <div id="box-caixas-header">
                     <div class="itens-caixas caixas1-3">
-
+                        <div id="img">
+                            <img src="imgs/dollar.png" id="icon-dollar">
+                        </div>
+                        <p>Melhores cotações </p>
                     </div>
                     <div class="itens-caixas caixas2-4">
 
@@ -114,54 +117,76 @@
         </header>
         
        <div id="all-box">
-        <div class="container">
-            <div class="box-button-form">
+            <div class="container">
+                <div class="box-button-form">
                 
                     <button class="box-buttons-comimg" id="button1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
                     <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
                       </svg>ENVIO ATE 40KG
                     </button>
-                <button id="button2"  class="box-buttons-comimg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                    <button id="button2"  class="box-buttons-comimg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
                         <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
-                      </svg>ENVIO + DE 40KG
-                </button>
-            </div>
-        
-                <form>
-                    <div class="form-group" id="group-1">
-                        <input type="text" placeholder="Cidade de origem" class="origem-destino">
-                        <div class="toggle-group">
-                            <label><input type="radio" name="origem" checked> Balcão</label>
-                            <label><input type="radio" name="origem"> Coleta</label>
+                        </svg>ENVIO + DE 40KG
+                    </button>
+                </div>
+                <div id="box-form-details">
+                    <form>
+                        <div class="form-group" id="group-1">
+                            <input type="text" placeholder="Cidade de origem" class="origem-destino">
+                            <div class="toggle-group">
+                                <label><input type="radio" name="origem" checked> Balcão</label>
+                                <label><input type="radio" name="origem"> Coleta</label>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="form-group" id="group-2">
-                        <input type="text" placeholder="Cidade de destino" class="origem-destino" required>
-                        <div class="toggle-group">
-                            <label><input type="radio" name="destino" checked> Balcão</label>
-                            <label><input type="radio" name="destino"> Coleta</label>
+                    
+                        <div class="form-group" id="group-2">
+                            <input type="text" placeholder="Cidade de destino" class="origem-destino" required>
+                            <div class="toggle-group">
+                                <label><input type="radio" name="destino" checked> Balcão</label>
+                                <label><input type="radio" name="destino"> Coleta</label>
+                            </div>
                         </div>
-                    </div>
-                
-                    <div class="form-group" id="group-3">
-                        <input type="text" placeholder="Tamanho da embalagem" id="input-3" >
-                        <input type="number" placeholder="Valor da NF" id="valor-nf">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" id="icon-plus" style="fill: #FFFFFF;">
+                    
+                        <div class="form-group" id="group-3">
+                            <input type="text" placeholder="Tamanho da embalagem" id="input-3" >
+                            <input type="number" placeholder="Valor da NF" id="valor-nf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" id="icon-plus" style="fill: #FFFFFF;">
                             <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-                          </svg>
+                            </svg>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" style="width: 310px;" placeholder="Digite seu CPF/CNPJ">
+                        </div>
+                        <button type="submit"  class="submit-button" id="">SIMULAR ENVIO</button>
+                    </form>
+                </div>
+            </div>
+            <div id="tst">
+                <div id="content-next-form">
+                    <div id="details">
+                        <p>O envio simulado no formulário ao lado é de aproximadamente:</p>
                     </div>
-                
-                    <div class="form-group">
-                        <input type="text" style="width: 310px;" placeholder="Digite seu CPF/CNPJ">
+                    <div id="infor-ul">
+
+                        <h1 id="title-informacoes">Infomações importantes</h1>
+                        <ul id="ul-second-section">
+                            <li>Limite máximo de 40kgs por volume.</li>
+                            <li>
+                                Tamanho máximo por volume de 53 cm de comprimento x 43 cm de altura x 43 de largura.
+                            </li>
+                            <li>Esse é o valor estimado, previsão de custo comfirmado no ato do envio</li>
+                            <li>Na estimativa de valor estão incluídas Seguro e GRIS.</li>
+                            <li>na estimativa de valor não estão inclusos IMPOSTOS cobrados conforme a legislação vigente.</li> 
+                            <li>Não transportamos: alimentos perecíveis (mesmo estando congelados), seres vivos, dinheiro, ou cheques, objetos cortantes, líquidos, explosivos ou inflamáveis.</li>   
+                        </ul>
                     </div>
-                
-                    <button type="submit"  class="submit-button" id="">SIMULAR ENVIO</button>
-                </form>
+                </div>
+            </div>
         </div>
-    </div>
     </section> 
+    
 </body>
 </html>

@@ -29,14 +29,16 @@ a{
     text-decoration: none;
     color: #fff;
 }
-ul{
+#ul-head{
     display: flex;
   list-style: none;   
     font-size: 14px;
     font-weight: 600;
     gap: 15px;
 }
-
+ul{
+    list-style: none;
+}
 .btn-boxs{
     display: flex;
     align-items: center;
@@ -162,12 +164,22 @@ nav>div>ul>li>a:hover{
     margin: auto;
 }
 .itens-caixas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     width: 146px;
     height: 130px;
     border-radius: 20px;
+    text-align: center;
 }
+
 .caixas1-3{
     background-color: #1182ba;
+}
+#icon-dollar{
+    width: 50px;
+    height: 50px;
 }
 .caixas2-4{
     background-color: none;
@@ -187,7 +199,13 @@ nav>div>ul>li>a:hover{
 
 
 
-
+#all-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: -70px;
+}
 .container {
     background-color: #fff;
     border-radius: 20px;
@@ -195,12 +213,7 @@ nav>div>ul>li>a:hover{
     height: 340px;
     margin-bottom: 30px;
     padding-bottom: 30px;
-}
-#all-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
+
 }
 .box-button-form{
     display: flex;
@@ -280,5 +293,27 @@ input[type="text"], input[type="number"] {
     cursor: pointer;
     font-size: 16px;
     width: 50%;
-    margin-left: 22px;
+    margin-left: 30px;
+}
+
+#content-next-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+    color: #fff;
+    padding: 0px 0px 0px 30px;
+    font-size: 13px;
+    height: 380px;
+}
+#infor-ul{
+    width: 533px;
+}
+#title-informacoes{
+    font-size: 12px;
+    padding: 0px 0px 20px 0px;
+}
+#ul-second-section{
+    font-size: 11px;
+    line-height: 16px;
 }
