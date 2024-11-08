@@ -145,14 +145,14 @@ nav>div>ul>li>a:hover{
     align-items: center;
     justify-content: center;
     padding-top: 60px;
-    gap: 100px;
+    gap: 30px;
 }
 #txt-second-layout{
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 300;
-    width: 320px;
+    width: 400px;
+    line-height: 50px;
     color: #fff;
-    margin-top: -18px;
 }
     
 
@@ -185,6 +185,7 @@ nav>div>ul>li>a:hover{
 
 #caixa-2{
     gap: 15px;
+    position: relative;
 }
 #caixa-3{
     gap: 15px;
@@ -192,7 +193,6 @@ nav>div>ul>li>a:hover{
 .caixas2-4{
     background-color: none;
     border: 2px solid #fff;
-    position: relative;
 }
 #caixa-4{
    display: flex; 
@@ -357,10 +357,79 @@ input[type="text"], input[type="number"] {
 /* TERCEIRA SECTION*/
 #terceira-section{
     display: flex;
-    align-items: center;
+    align-items: center;  
     justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 300px ;
+}
+
+#firts-conteiner-txts{
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding-left: 10px;
 }
 #title-terc-section{
-    width: 170px;
-    height: 300px;
+    width: 380px;
+    font-size: 40px;
+}
+#txt-terc-layout{
+    width: 290px;
+    color: #0077b6;
+    font-size: 18px;
+}
+#box-btn-terc{
+    padding-top: 20px;
+}
+#btn-vms-conversar{
+    background-color: #d42731;
+    width: 272px;
+    height: 49px;
+    border-radius: 39px;
+    font-weight: 500;
+    font-size: 15px;
+    LETTER-SPACING: 4PX;
+    border: none;
+    color: #fff;
+}
+#second-ctn-img{
+    background-color: #28a6d9;
+    border-radius: 80px;
+    height: 420px;
+    width: 370px;
+}
+
+#img-ctn2{
+    width: 400px;
+    height: 400px;
+    padding: 60px 0px 0px 0px;
+}
+#div-second-and-terc{
+    display: flex;
+    gap: 10px;
+}
+#ctn3-itens{
+    background-color: #28a6d9;
+    border-radius: 80px;
+    height: 420px;
+    width: 320px;
+}
+#all-box-ctn3{
+    position: relative;
+}
+#btn-ctn3{
+background-color:#000223;
+border: none;
+color: #fff;
+padding: 10px;
+border-radius: 20px;
+font-size: 15px;
+width: 180px;
+position: absolute;
+
+}
+#box-btn-ctn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
