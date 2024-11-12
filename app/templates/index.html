@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
@@ -11,11 +11,12 @@
     <title>Despacho Rápido</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+<!-- SEçÃO PRINCIPAL-->
 <body>
     <header id="header-main">
         <div class="box_logo">
             <a href="#" class="link_logo">
-               <img src="imgs/logo_despacho_rapido.png" id="logo">
+                <img src="{{ url_for('static', filename='imgs/logo_despacho_rapido.png') }}" >
             </a>
         </div>
         <nav class="nav_menu">
@@ -81,11 +82,11 @@
                 </a>
             </div>
             <div id="box-img-carro">
-                <img src="imgs/img-container-carro.png" id="img-carro">
+                <img src="{{ url_for('static', filename='imgs/img-container-carro.png') }}" id="img-carro">
             </div>
         </div>
     </div>
-    <!-- segunda sessão-->
+    <!-- segunda seÇão-->
     <section id="second-section">
         <header id="header-second-section">
 
@@ -96,7 +97,7 @@
                 <div id="box-caixas-header">
                     <div class="itens-caixas caixas1-3">
                         <div id="img">
-                            <img src="imgs/dollar.png" id="icon-dollar">
+                            <img src="{{ url_for('static', filename='imgs/dollar.png' )}}" id="icon-dollar">
                         </div>
                         <p>Melhores cotações </p>
                     </div>
@@ -104,14 +105,14 @@
                     <button id="button-24">
                         24H*
                     </button>
-                
+                    
                     <div class="itens-caixas caixas2-4" id="caixa-2">
-                        <img src="imgs/timer.png" id="icon-timer">
+                        <img src="{{ url_for('static', filename='imgs/timer.png' )}}" id="icon-timer">
                         <p>Rapidez e agilidade</p>
                     </div>
                 </div>
                     <div class="itens-caixas caixas1-3" id="caixa-3">
-                        <img src="imgs/box-delivery.png" id="icon">
+                        <img src="{{ url_for('static', filename='imgs/box-delivery.png' )}}" id="icon">
                         <p id="text-box3">Envios diários</p>
                     </div>
 
@@ -199,7 +200,8 @@
             </div>
         </div>
     </section> 
-    <div id="terceira-section">
+    <!-- TERCEIRA SEÇÃO-->
+    <div id="third-section">
             <div id="firts-conteiner-txts">
                 <p style="font-weight: 500;" id="title-terc-section">
                     Faz 
@@ -216,7 +218,7 @@
             <div id="div-second-and-terc">
                 <div id="second-ctn-img">
                     <div id="box-img-ctn2">
-                        <img src="imgs/fundo-ctn2.webp" id="img-ctn2">
+                        <img src="{{ url_for('static', filename='imgs/fundo-ctn2.webp' )}}" id="img-ctn2">
                     </div>
                 </div>
                 <div id="all-box-ctn3">
@@ -226,42 +228,56 @@
                         </button>
                     </div>
                     <div id="div-itens-ctn-3">
-                            <P class="prgs">
-                                <span class="number-icon">1</span>
-                                    Porta <img src="imgs/seta-removebg-preview.png" id="icon-arrow">
-                                    <span class="second-iten">Porta</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                                      </svg>
+                        
+                        <div class="div-each-item">
+                            <span class="number-icon">1</span>
+                                <P class="prgs" >
+                                    Balcão <img src="{{ url_for('static', filename='imgs/seta-removebg-preview.png' )}}" id="icon-arrow">
+                                    <span class="second-iten" id="item-second-quarto">Porta</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
                                 </P>
-                                <P class="prgs">
-                                    <span class="number-icon">2</span>
-                                    Porta <img src="imgs/seta-removebg-preview.png" id="icon-arrow">
-                                    <span class="second-iten">Balcão</span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                                      </svg>
-                        </P>
-                        <P class="prgs">
+                        </div>
+                        <div class="div-each-item">
+                            <span class="number-icon">2</span>
+                                <P class="prgs" >
+                                    Balcão <img src="{{ url_for('static', filename='imgs/seta-removebg-preview.png' )}}" id="icon-arrow">
+                                    <span class="second-iten" id="item-second-quarto">Porta</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
+                        <div class="div-each-item">
                             <span class="number-icon">3</span>
-                            Balcão <img src="imgs/seta-removebg-preview.png" id="icon-arrow">
-                            <span class="second-iten">Balcão</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                              </svg>
-                        </P>
-                        <P class="prgs">
+                                <P class="prgs" >
+                                    Balcão <img src="{{ url_for('static', filename='imgs/seta-removebg-preview.png' )}}" id="icon-arrow">
+                                    <span class="second-iten" id="item-second-quarto">Porta</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
+                        <div class="div-each-item">
                             <span class="number-icon">4</span>
-                            Balcão <img src="imgs/seta-removebg-preview.png" id="icon-arrow">
-                            <span class="second-iten">Porta</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
-                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
-                              </svg>
-                        </P>
+                                <P class="prgs" >
+                                    Balcão <img src="{{ url_for('static', filename='imgs/seta-removebg-preview.png' )}}" id="icon-arrow">
+                                    <span class="second-iten" id="item-second-quarto">Porta</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
                     </div>
                 </div>
             </div>
     </div>
+
+    <!-- QUARTA SESSÃO -->
+     <div id="fourth-session">
+
+     </div>
 </body>
 </html>
 

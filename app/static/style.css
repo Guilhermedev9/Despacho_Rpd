@@ -354,13 +354,14 @@ input[type="text"], input[type="number"] {
     font-size: 11px;
     line-height: 16px;
 }
+
 /* TERCEIRA SECTION*/
-#terceira-section{
+#third-section{
     display: flex;
     align-items: center;  
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 300px ;
+    padding-top: 7%;
+    padding-bottom: 3rem ;
 }
 
 #firts-conteiner-txts{
@@ -450,16 +451,20 @@ position: absolute;
     align-items: center;
     color: #fff;
     font-weight: 400;
-    gap: 20px;
     font-size: 22px;
     position: relative;
-    z-index: 2;
+    padding-left: 8px;
+    
 }
 #icon-arrow{
     position: absolute;
-    padding-left: 80px;
     margin-top: -3px;
+    padding-left: 2em;
 }
 .second-iten{
-    padding-left: 30px;
+padding-left: 3em;
+
+}
+.div-each-item{
+    display: flex;
 }
