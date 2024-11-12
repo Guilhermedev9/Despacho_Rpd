@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
 }
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -108,7 +108,7 @@ nav>div>ul>li>a:hover{
    margin: auto;
    max-width: 100%;
    width: 1496px;
-   height: 600px;
+   height: 533px;
 }
 /* itens*/
 #box-itens-txt{
@@ -142,10 +142,13 @@ nav>div>ul>li>a:hover{
 /* box img*/
 #box-img-carro{
     margin-top: 100p;
+    padding-left: 78px;
 }
 #img-carro{
     max-width: 500px;
-    height: 500px;
+    height: 470px;
 }
 /**/
-
+#ts{ 
+    background-color: #df2326;
+}
