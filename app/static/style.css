@@ -154,8 +154,7 @@ nav>div>ul>li>a:hover{
     line-height: 50px;
     color: #fff;
 }
-    
-
+/* CAIXAS SEGUNDA SEÇÃO*/
 #box-caixas-header{
     display: flex;
     align-items: center;
@@ -360,8 +359,8 @@ input[type="text"], input[type="number"] {
     display: flex;
     align-items: center;  
     justify-content: center;
-    padding-top: 7%;
-    padding-bottom: 3rem ;
+    padding-top: 5rem;
+    padding-bottom: 5rem ;
 }
 
 #firts-conteiner-txts{
@@ -369,6 +368,7 @@ display: flex;
 flex-direction: column;
 gap: 15px;
 padding-left: 10px;
+margin-top: -5rem;
 }
 #title-terc-section{
     width: 380px;
@@ -443,8 +443,8 @@ position: absolute;
     font-size: 70px;
     font-weight: 600;
     color: #0079b7;
-    font-family: sans-serif;
     font-style: italic;
+    font-family: sans-serif;
 }
 .prgs{
     display: flex;
@@ -453,18 +453,74 @@ position: absolute;
     font-weight: 400;
     font-size: 22px;
     position: relative;
-    padding-left: 8px;
+    padding-left: 15px;
     
 }
 #icon-arrow{
     position: absolute;
     margin-top: -3px;
-    padding-left: 2em;
+    padding-left: 1.7em;
 }
 .second-iten{
 padding-left: 3em;
-
 }
 .div-each-item{
     display: flex;
+}
+#item-second-one{
+padding-right: 1.2em;
+}
+#item-second-tow{
+    padding-right: 12px;
+}
+#item-second-third{
+    margin-left: -14px;
+    padding-right: 11px;
+}
+#item-second-quarto{
+    margin-left: -14px;
+    padding-right: 1.6rem;
+}
+
+/* QUARTA SEÇÃO*/
+#fourth-session{
+height: 30em;
+background-color: #28a6d9;
+}
+
+/* QUINTA SECTION */
+#allbox-fifth-section{
+    padding: 50px 0px 50px 0px;
+}
+#box-itens{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -32rem;
+}
+#text-fifth-section{
+    width: 570px;
+}
+/* CAIXAS QUINTA SEÇÃO*/
+#box-caixas-5section{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: auto;
+}
+.itens-caixas-5section{
+    width: 220px;
+    height: 240px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boxs1-3{
+    border: 2px solid #000;
+}
+.boxs2-4{
+    background-color: #f1f5ff;
+    border: 2px solid #f1f5ff;
 }
