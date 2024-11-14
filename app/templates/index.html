@@ -94,7 +94,7 @@
                     <span style="font-weight: 600;">sua cotação </span>
                     de envio online</p>
             <div>
-                <div id="box-caixas-header">
+                <div class="box-caixas-header">
                     <div class="itens-caixas caixas1-3">
                         <div id="img">
                             <img src="{{ url_for('static', filename='imgs/dollar.png' )}}" id="icon-dollar">
@@ -281,25 +281,45 @@
 
      <!--QUINTA SEÇÃO -->
      <section id="allbox-fifth-section">
-        <div id="box-itens">
+        <div id="box-contents">
             <div id="text-fifth-section">
                 <p style="font-weight: 400; font-size: 45px;">Tenha uma rotina de
                     <span style="font-weight: 700; color: #d12f31;"> envios descomplicados </span>
                 </p>
             </div>
-            <div id="box-caixas-5section">
-                <div id="caixa1" class="itens-caixas-5section boxs1-3">
-                    <p>Entregamos para 500 cidades do Brasil</p>
-                </div>
-                <div id="caixa2 " class="itens-caixas-5section boxs2-4">
-                    <p> Economize tempo, dinheiro e combustível</p>
-                </div>
-                <div id="caixa3" class="itens-caixas-5section boxs1-3">
-                    <p> Envie um pacote ou vários de uma só vez</p>
-                </div>
-                <div id="caixa4" class="itens-caixas-5section boxs2-4">
-                   <p>Excelente custo benefício</p> 
-                </div>
+            <div class="">
+                <div class="box-caixas-header">
+                     <div id="caixa1" class="itens-caixas-5section boxs1-3">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/icon-mapa.png' )}}" id="icon-mapa">
+                        </div>
+                        <p class="texts-boxs" id="text-p1">Entregamos para 
+                            <span class="spans">500 cidades</span>
+                             do Brasil
+                        </p>
+                    </div>
+
+                    <div id="caixa2 " class="itens-caixas-5section boxs2-4">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/icon-dollar-red.png' )}}" id="icon-dollar-red">
+                        </div>
+                        <p class="texts-boxs" id="text-p2"> 
+                            <span class="spans">Economize</span> tempo, dinheiro e combustível</p>
+                    </div>
+
+                    <div id="caixa3" class="itens-caixas-5section boxs1-3">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/box-red.png' )}}" id="box-red">
+                        </div>
+                        <p class="texts-boxs" id="text-p3"> Envie um pacote ou 
+                            <span class="spans">vários</span> de uma só vez</p>
+                    </div>
+                    <div id="caixa4" class="itens-caixas-5section boxs2-4">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/truck-red.png' )}}" id="truck-red">
+                        </div>
+                        <p class="texts-boxs" id="text-p4">Excelente <br>custo <span class="spans">benefício</span></p> 
+                    </div>
             </div>
         </div>
      </section> 

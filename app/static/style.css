@@ -142,7 +142,7 @@ nav>div>ul>li>a:hover{
 /*  HEADER second layout*/
 #header-second-section{
     display: flex;
-    align-items: center;
+    align-items:  center;
     justify-content: center;
     padding-top: 60px;
     gap: 30px;
@@ -155,10 +155,9 @@ nav>div>ul>li>a:hover{
     color: #fff;
 }
 /* CAIXAS SEGUNDA SEÇÃO*/
-#box-caixas-header{
+.box-caixas-header{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 25px;
     margin: auto;
 }
@@ -490,32 +489,31 @@ background-color: #28a6d9;
 
 /* QUINTA SECTION */
 #allbox-fifth-section{
-    padding: 50px 0px 50px 0px;
+    padding: 70px 0px 50px 0px;
 }
-#box-itens{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-left: -32rem;
+#box-contents{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1050px;
 }
 #text-fifth-section{
     width: 570px;
+    padding-bottom: 50px;
 }
+
 /* CAIXAS QUINTA SEÇÃO*/
-#box-caixas-5section{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: auto;
-}
+
 .itens-caixas-5section{
     width: 220px;
     height: 240px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 30px;
+    font-size: 18px;
 }
 .boxs1-3{
     border: 2px solid #000;
@@ -524,3 +522,36 @@ background-color: #28a6d9;
     background-color: #f1f5ff;
     border: 2px solid #f1f5ff;
 }
+.spans{
+    font-weight: 700;
+}
+#text-p1{
+    width: 90px;
+}
+#text-p2{
+    width: 120px;
+}
+#text-p3{
+    width: 150px;  
+}
+/* IMGS QUINTA SEÇÃO*/
+#icon-mapa{
+    width: 80px;
+    width: 80px;
+}
+#icon-dollar-red{
+    width:  60px;
+    height: 60px;
+}
+#box-red{
+    width:  60px;
+    height: 60px;
+}
+#truck-red{
+    width:  80px;
+    height: 50px;
+}
+#img1{
+    margin-left: -5px;
+}
+
