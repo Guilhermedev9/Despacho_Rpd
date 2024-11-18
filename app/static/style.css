@@ -486,34 +486,34 @@ padding-right: 1.2em;
 height: 30em;
 background-color: #28a6d9;
 }
-
+/**/
 /* QUINTA SECTION */
-#allbox-fifth-section{
-    padding: 70px 0px 50px 0px;
+#fifth-section{
+    padding: 60px 0px 80px 0px;
 }
 #box-contents{
     width: 80%;
     margin-right: auto;
     margin-left: auto;
-    max-width: 1050px;
+    max-width: 1080px;
 }
 #text-fifth-section{
     width: 570px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 /* CAIXAS QUINTA SEÇÃO*/
 
 .itens-caixas-5section{
-    width: 220px;
-    height: 240px;
+    width: 320px;
+    height: 260px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
     padding-left: 30px;
-    font-size: 18px;
+    font-size: 20px;
 }
 .boxs1-3{
     border: 2px solid #000;
@@ -536,22 +536,80 @@ background-color: #28a6d9;
 }
 /* IMGS QUINTA SEÇÃO*/
 #icon-mapa{
-    width: 80px;
-    width: 80px;
+    width: 90px;
+    width: 90px;
 }
 #icon-dollar-red{
-    width:  60px;
-    height: 60px;
+    width:  70px;
+    height: 70px;
 }
 #box-red{
-    width:  60px;
-    height: 60px;
+    width:  70px;
+    height: 70px;
 }
 #truck-red{
-    width:  80px;
+    width:  90px;
     height: 50px;
+    margin-top: -5px;
 }
 #img1{
     margin-left: -5px;
 }
+/**/
 
+/* SEXTA SEÇÃO*/
+#sixth-section{
+    background-color: #000223;
+}
+#allitens-sixth-section{
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+    padding-right: 130px;
+}
+#text-main-sixth{
+    font-size: 40px;
+    width: 100px;
+    line-height: 40px;
+    margin-top: -60px;
+    padding-bottom: 40px;
+}
+#p-duv{
+    font-weight: 400;
+}
+#box-prgs p{
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: 600;
+    width: 550px;
+    
+}
+.prgf-1-3{
+    color: #28a6d9;
+}
+
+#img-tel{
+    width: 500px;
+    height: 560px;
+}
+.ctns-prgs-plus{
+    display: flex;
+    align-items: center;
+}
+.icons-plus{
+    margin-right: -50px;
+    padding: 0px 0px 0px 50px;
+    width: 65px;
+    height: 20px;
+}
+
+/**/
+
+/* SETIMA SEÇÃO*/
+#seventh-section{
+    background-color: #f1f5ff;
+    height: 100px;
+}
