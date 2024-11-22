@@ -611,5 +611,57 @@ background-color: #28a6d9;
 /* SETIMA SEÇÃO*/
 #seventh-section{
     background-color: #f1f5ff;
-    height: 100px;
 }
+#header-seventh-section{
+    padding-top: 120px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 50px;
+}
+#box-caixas-7section{
+display: flex;
+gap: 15px;
+}
+.itens-caixas-7section{
+    width: 170px;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 17px;
+}
+.texts-boxs{
+    width: 100px;
+}
+#text-7section{
+    font-size: 40px;
+    font-weight: 300;
+    width: 400px;
+    line-height: 50px;
+    color: #fff;
+}
+#caixa01{
+    background-color: #000223;
+    border: none;
+}
+#caixa02{
+    background-color: none;
+    border: 2px solid #26a6d7;
+    color: #26a6d7;
+    font-weight: 500;
+}
+#caixa03{
+    background-color: #26a6d7;
+    border: none;
+    gap: 0px;
+}
+#icon-user{
+    width:  60px;
+    height: 60px;
+}
+
