@@ -618,7 +618,7 @@ background-color: #28a6d9;
     display: flex;
     color: #fff;
     justify-content: center;
-    gap: 100px;
+    gap: 130px;
     padding-bottom: 50px;
 }
 #box-caixas-7section{
@@ -702,19 +702,30 @@ gap: 15px;
     display: flex;
 }
 #section-footer{
-
+    width: 100%;
 }
 #div-allitens-footer{
     width: 91%;
-        max-width: 1160px;
-        margin-right: auto;
-        margin-left: auto;
-}
-#header-itens-footer{
-    flex-direction: row;
-    flex-wrap: wrap;
+    max-width: 1068px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
+#header-itens-footer{
+display: flex;
+gap: 30px;
+}
+.titles-footer{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* PRIMEIRO CONTAINER FOOTER*/
+#cnt1-footer{
+    margin-right: auto;
+}
+#txt1-footer{
+    max-width: 60%;
+}
 #input-footer{
     font-size: 16px;
     width: 100%;
@@ -722,7 +733,7 @@ gap: 15px;
     border-radius: 28px;
     padding: 10px;
     border: none;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 #div-icon-arrow{
     width: 38px;
@@ -730,4 +741,25 @@ gap: 15px;
     padding: 4.5rem 0px 0px 0px;
     cursor: pointer;
 }
+#horario-footer{
+    font-size: 16px;
+    max-width: 70%;
+    font-weight: 450;
+}
 
+/* ESTILIZAÇÃO CONTAINERS*/
+.titles-footer{
+    margin-bottom: 20px;
+}
+.list-ctns-footer > ul > li{
+    font-weight: 450;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.list-ctns-footer > ul > li > a:hover{
+    color: #26a6d7;
+}
+#box-logo-footer{
+    display: flex;
+    justify-content: flex-end;
+}
