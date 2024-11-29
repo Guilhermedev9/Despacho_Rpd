@@ -743,7 +743,7 @@ gap: 30px;
 #div-icon-arrow{
     width: 38px;
     margin-left: auto;
-    padding: 4.5rem 0px 0px 0px;
+    padding: 4rem 0px 0px 0px;
     cursor: pointer;
 }
 #horario-footer{
@@ -764,7 +764,20 @@ gap: 30px;
 .list-ctns-footer > ul > li > a:hover{
     color: #26a6d7;
 }
-#box-logo-footer{
+/* footers extras*/
+.box-footers-extras{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.itens-footers-extras:hover{
+    color: #26a6d7;
+}
+#div-allitens-footer hr{
+    height: 0.5px;
+    border: none;
+    background-color: #fff;
+    margin: 30px 0px 20px 0px;
+    opacity: 0.5;
 }
