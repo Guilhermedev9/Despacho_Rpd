@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    background: #000223  !important;
+    background-color: #000223;
     height: 100px;
     gap: 40px;
 }
@@ -147,7 +147,7 @@ nav>div>ul>li>a:hover{
 /*  HEADER second layout*/
 #header-second-section{
     display: flex;
-    align-items: center;
+    align-items:  center;
     justify-content: center;
     padding-top: 60px;
     gap: 30px;
@@ -159,12 +159,10 @@ nav>div>ul>li>a:hover{
     line-height: 50px;
     color: #fff;
 }
-    
-
-#box-caixas-header{
+/* CAIXAS SEGUNDA SEÇÃO*/
+.box-caixas-header{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 25px;
     margin: auto;
 }
@@ -359,13 +357,14 @@ input[type="text"], input[type="number"] {
     font-size: 11px;
     line-height: 16px;
 }
+
 /* TERCEIRA SECTION*/
-#terceira-section{
+#third-section{
     display: flex;
     align-items: center;  
     justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 300px ;
+    padding-top: 5rem;
+    padding-bottom: 5rem ;
 }
 
 #firts-conteiner-txts{
@@ -373,6 +372,7 @@ display: flex;
 flex-direction: column;
 gap: 15px;
 padding-left: 10px;
+margin-top: -5rem;
 }
 #title-terc-section{
     width: 380px;
@@ -396,6 +396,7 @@ padding-left: 10px;
     LETTER-SPACING: 4PX;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 #second-ctn-img{
     background-color: #28a6d9;
@@ -447,24 +448,323 @@ position: absolute;
     font-size: 70px;
     font-weight: 600;
     color: #0079b7;
-    font-family: sans-serif;
     font-style: italic;
+    font-family: sans-serif;
 }
 .prgs{
     display: flex;
     align-items: center;
     color: #fff;
     font-weight: 400;
-    gap: 20px;
     font-size: 22px;
     position: relative;
-    z-index: 2;
+    padding-left: 15px;
+    
 }
-#icon-arrow{
+.icon-arrow{
     position: absolute;
-    padding-left: 80px;
     margin-top: -3px;
+    padding-left: 1.7em;
 }
 .second-iten{
+padding-left: 3em;
+}
+.div-each-item{
+    display: flex;
+}
+#item-second-one{
+padding-right: 1.2em;
+}
+#item-second-tow{
+    padding-right: 12px;
+}
+#item-second-third{
+    margin-left: -14px;
+    padding-right: 11px;
+}
+#item-second-quarto{
+    margin-left: -14px;
+    padding-right: 1.6rem;
+}
+
+/* QUARTA SEÇÃO*/
+#fourth-session{
+height: 30em;
+background-color: #28a6d9;
+}
+/**/
+/* QUINTA SECTION */
+#fifth-section{
+    padding: 60px 0px 80px 0px;
+}
+#box-contents{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1080px;
+}
+#text-fifth-section{
+    width: 570px;
+    padding-bottom: 70px;
+}
+
+/* CAIXAS QUINTA SEÇÃO*/
+
+.itens-caixas-5section{
+    width: 320px;
+    height: 260px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
     padding-left: 30px;
+    font-size: 20px;
+}
+.boxs1-3{
+    border: 2px solid #000;
+}
+.boxs2-4{
+    background-color: #f1f5ff;
+    border: 2px solid #f1f5ff;
+}
+.spans{
+    font-weight: 700;
+}
+#text-p1{
+    width: 90px;
+}
+#text-p2{
+    width: 120px;
+}
+#text-p3{
+    width: 150px;  
+}
+/* IMGS QUINTA SEÇÃO*/
+#icon-mapa{
+    width: 90px;
+    width: 90px;
+}
+#icon-dollar-red{
+    width:  70px;
+    height: 70px;
+}
+#box-red{
+    width:  70px;
+    height: 70px;
+}
+#truck-red{
+    width:  90px;
+    height: 50px;
+    margin-top: -5px;
+}
+#img1{
+    margin-left: -5px;
+}
+/**/
+
+/* SEXTA SEÇÃO*/
+#sixth-section{
+    background-color: #000223;
+}
+#allitens-sixth-section{
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #fff;
+    padding-right: 130px;
+}
+#text-main-sixth{
+    font-size: 40px;
+    width: 100px;
+    line-height: 40px;
+    margin-top: -60px;
+    padding-bottom: 40px;
+}
+#p-duv{
+    font-weight: 400;
+}
+#box-prgs p{
+    font-size: 15px;
+    padding: 15px 0;
+    font-weight: 600;
+    width: 550px;
+    
+}
+.prgf-1-3{
+    color: #28a6d9;
+}
+
+#img-tel{
+    width: 500px;
+    height: 560px;
+}
+.ctns-prgs-plus{
+    display: flex;
+    align-items: center;
+}
+.icons-plus{
+    margin-right: -50px;
+    padding: 0px 0px 0px 50px;
+    width: 65px;
+    height: 20px;
+}
+
+/**/
+
+/* SETIMA SEÇÃO*/
+#seventh-section{
+    background-color: #f1f5ff;
+}
+#header-seventh-section{
+    padding-top: 120px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    gap: 130px;
+    padding-bottom: 50px;
+}
+#box-caixas-7section{
+display: flex;
+gap: 15px;
+}
+.itens-caixas-7section{
+    width: 170px;
+    height: 150px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 17px;
+}
+.texts-boxs{
+    width: 100px;
+}
+#text-7section{
+    font-size: 40px;
+    font-weight: 300;
+    width: 400px;
+    line-height: 50px;
+    color: #fff;
+}
+#caixa01{
+    background-color: #01032a;
+    border: none;
+}
+#caixa02{
+    background-color: none;
+    border: 2px solid #26a6d7;
+    color: #26a6d7;
+    font-weight: 500;
+}
+#caixa03{
+    background-color: #26a6d7;
+    border: none;
+    gap: 0px;
+}
+#icon-user{
+    width:  60px;
+    height: 60px;
+} 
+/* BUTTON whatsap */
+
+
+#all-box-tel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 0px 1200px;
+}
+.divs-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button{
+    background-color: #25D366;
+    width:  60px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+}
+#div-btn-wpp{
+    width:  50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+/* FOOTER*/
+#footer{
+    background-color: #01032a;
+    padding-top: 100px;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+}
+#section-footer{
+    width: 100%;
+}
+#div-allitens-footer{
+    width: 91%;
+    max-width: 1068px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#header-itens-footer{
+display: flex;
+gap: 30px;
+}
+.titles-footer{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* PRIMEIRO CONTAINER FOOTER*/
+#cnt1-footer{
+    margin-right: auto;
+}
+#txt1-footer{
+    max-width: 60%;
+}
+#input-footer{
+    font-size: 16px;
+    width: 100%;
+    min-height: 48px;
+    border-radius: 28px;
+    padding: 10px;
+    border: none;
+    margin-top: 25px;
+}
+#div-icon-arrow{
+    width: 38px;
+    margin-left: auto;
+    padding: 4.5rem 0px 0px 0px;
+    cursor: pointer;
+}
+#horario-footer{
+    font-size: 16px;
+    max-width: 70%;
+    font-weight: 450;
+}
+
+/* ESTILIZAÇÃO CONTAINERS*/
+.titles-footer{
+    margin-bottom: 20px;
+}
+.list-ctns-footer > ul > li{
+    font-weight: 450;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.list-ctns-footer > ul > li > a:hover{
+    color: #26a6d7;
+}
+#box-logo-footer{
+    display: flex;
+    justify-content: flex-end;
 }

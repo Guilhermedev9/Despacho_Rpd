@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <title>Despacho Rápido</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<!-- SEçÃO PRINCIPAL-->
+<body>
+    <header id="header-main">
+        <div class="box_logo">
+            <a href="#" class="link_logo">
+                <img src="{{ url_for('static', filename='imgs/logo_despacho_rapido.png') }}" >
+            </a>
+        </div>
+        <nav class="nav_menu">
+            <div class="header_buttons">
+
+                <ul id="ul-head">
+                   <li>
+                       <a href="">SIMULAR ENVIO</a>
+                   </li>
+                   <li>
+                       <a href="">DÚVIDAS</a>
+                   </li>
+                   <li>
+                       <a href="">RESTRIÇÕES</a>
+                   </li>
+                   <li>
+                       <a href="">ONDE ESTAMOS</a>
+                   </li>
+                   <li>
+                       <a href="">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+                    
+                <div class="header_buttons">
+
+                <button class="button1_header" id="btn_one">
+                    <div class="btn-boxs">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="17" height="17" viewBox="0 0 50 50"
+                        style="fill:#FFFFFF;">
+                        <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 
+                        28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"></path></svg>
+                        <a href="" id="link1">RASTREAR</a>
+
+                    </div>
+                </button>
+
+                <button class="button2_header" id="btn_tow">
+                    <div class="btn-boxs">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16" style="fill:#FFFFFF;">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/></svg>
+                        <a href="">SOU CLIENTE</a>
+                    </div>
+                </button>
+            </div> 
+    </header>
+
+    <div id="main-box-home">
+        <div id="conteudos">
+            <div id="box-itens-txt">
+                <p>Entregas rápidas e seguras com 
+                    <span style="color: #26a6d7;font-weight: 600;">melhor preço.</span></p>
+                <p id="subtitle">Simule agora mesmo o seu envio.</p>
+                
+                <a href=""> 
+                    <button id="btn-envio">
+                    SIMULAR ENVIO
+                    </button>
+                </a>
+            </div>
+            <div id="box-img-carro">
+                <img src="{{ url_for('static', filename='imgs/img-container-carro.png') }}" id="img-carro">
+            </div>
+        </div>
+    </div>
+    <!-- segunda seÇão-->
+    <section id="second-section">
+        <header id="header-second-section">
+
+                <p id="txt-second-layout">Faça agora 
+                    <span style="font-weight: 600;">sua cotação </span>
+                    de envio online</p>
+            <div>
+                <div class="box-caixas-header">
+                    <div class="itens-caixas caixas1-3">
+                        <div id="img">
+                            <img src="{{ url_for('static', filename='imgs/dollar.png' )}}" id="icon-dollar">
+                        </div>
+                        <p>Melhores cotações </p>
+                    </div>
+                <div class="allbox-2">
+                    <button id="button-24">
+                        24H*
+                    </button>
+                    
+                    <div class="itens-caixas caixas2-4" id="caixa-2">
+                        <img src="{{ url_for('static', filename='imgs/timer.png' )}}" id="icon-timer">
+                        <p>Rapidez e agilidade</p>
+                    </div>
+                </div>
+                    <div class="itens-caixas caixas1-3" id="caixa-3">
+                        <img src="{{ url_for('static', filename='imgs/box-delivery.png' )}}" id="icon">
+                        <p id="text-box3">Envios diários</p>
+                    </div>
+
+                    <div class="itens-caixas caixas2-4" id="caixa-4">
+                        <div id="number">
+                            <h3 style="font-weight: 500;" >0,008</h3>
+                        </div>
+                        <p id="text-box4">Menor Avaria</p>
+                    </div>
+                </div>
+                <div id="box-txt-bottom">
+                    <p id="txt-bottom">*CONSULTE AS CIDADES COM PRAZO DE ENVIO 24H</p>
+                </div>
+            </div>
+        </header>
+        
+       <div id="all-box">
+            <div class="container">
+                <div class="box-button-form">
+                
+                    <button class="box-buttons-comimg" id="button1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                    <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                      </svg>ENVIO ATE 40KG
+                    </button>
+                    <button id="button2"  class="box-buttons-comimg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                        </svg>ENVIO + DE 40KG
+                    </button>
+                </div>
+                <div id="box-form-details">
+                    <form>
+                        <div class="form-group" id="group-1">
+                            <input type="text" placeholder="Cidade de origem" class="origem-destino">
+                            <div class="toggle-group">
+                                <label><input type="radio" name="origem" checked> Balcão</label>
+                                <label><input type="radio" name="origem"> Coleta</label>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group" id="group-2">
+                            <input type="text" placeholder="Cidade de destino" class="origem-destino" required>
+                            <div class="toggle-group">
+                                <label><input type="radio" name="destino" checked> Balcão</label>
+                                <label><input type="radio" name="destino"> Coleta</label>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group" id="group-3">
+                            <input type="text" placeholder="Tamanho da embalagem" id="input-3" >
+                            <input type="number" placeholder="Valor da NF" id="valor-nf">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16" id="icon-plus" style="fill: #FFFFFF;">
+                            <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                            </svg>
+                        </div>
+                    
+                        <div class="form-group">
+                            <input type="text" style="width: 310px;" placeholder="Digite seu CPF/CNPJ">
+                        </div>
+                        <button type="submit"  class="submit-button" id="">SIMULAR ENVIO</button>
+                    </form>
+                </div>
+            </div>
+            <div id="tst">
+                <div id="content-next-form">
+                    <div id="details">
+                        <p>O envio simulado no formulário ao lado é de aproximadamente:</p>
+                    </div>
+                    <div id="infor-ul">
+
+                        <h1 id="title-informacoes">Infomações importantes</h1>
+                        <ul id="ul-second-section">
+                            <li>Limite máximo de 40kgs por volume.</li>
+                            <li>
+                                Tamanho máximo por volume de 53 cm de comprimento x 43 cm de altura x 43 de largura.
+                            </li>
+                            <li>Esse é o valor estimado, previsão de custo comfirmado no ato do envio</li>
+                            <li>Na estimativa de valor estão incluídas Seguro e GRIS.</li>
+                            <li>na estimativa de valor não estão inclusos IMPOSTOS cobrados conforme a legislação vigente.</li> 
+                            <li>Não transportamos: alimentos perecíveis (mesmo estando congelados), seres vivos, dinheiro, ou cheques, objetos cortantes, líquidos, explosivos ou inflamáveis.</li>   
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- TERCEIRA SEÇÃO-->
+    <div id="third-section">
+            <div id="firts-conteiner-txts">
+                <p style="font-weight: 400;" id="title-terc-section">
+                    Faz 
+                    <span style="font-weight: 700;">muitos</span> envios por mês?
+                </p>
+                <p style="font-weight: 400;" id="txt-terc-layout">Conheça as vantagens de um 
+                    <span style="font-weight: 700; " >cliente Correntista.</p>
+                <div id="box-btn-terc">
+                    <button type="submit" id="btn-vms-conversar">
+                        VAMOS CONVERSAR
+                    </button>
+                </div>
+            </div>
+            <div id="div-second-and-terc">
+                <div id="second-ctn-img">
+                    <div id="box-img-ctn2">
+                        <img src="{{ url_for('static', filename='imgs/fundo-ctn2.webp' )}}" id="img-ctn2">
+                    </div>
+                </div>
+                <div id="all-box-ctn3">
+                    <div id="box-btn-ctn3">
+                        <button id="btn-ctn3">
+                            Tipos de serviços
+                        </button>
+                    </div>
+                    <div id="div-itens-ctn-3">
+                        
+                        <div class="div-each-item">
+                            <span class="number-icon">1</span>
+                                <P class="prgs" >
+                                    Porta <img src="{{ url_for('static', filename='imgs/icon-arrow.png' )}}" class="icon-arrow">
+                                    <span class="second-iten" id="item-second-one">Porta</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
+                        <div class="div-each-item">
+                            <span class="number-icon">2</span>
+                                <P class="prgs" >
+                                    Porta <img src="{{ url_for('static', filename='imgs/icon-arrow.png' )}}" class="icon-arrow">
+                                    <span class="second-iten" id="item-second-tow">Balcão</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
+                        <div class="div-each-item">
+                            <span class="number-icon">3</span>
+                                <P class="prgs" >
+                                    Balcão <img src="{{ url_for('static', filename='imgs/icon-arrow.png' )}}" class="icon-arrow">
+                                    <span class="second-iten" id="item-second-third">Balcão</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
+                        <div class="div-each-item">
+                            <span class="number-icon">4</span>
+                                <P class="prgs" >
+                                    Balcão <img src="{{ url_for('static', filename='imgs/icon-arrow.png' )}}" class="icon-arrow">
+                                    <span class="second-iten" id="item-second-quarto">Porta</span>
+                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-info" viewBox="0 0 16 16">
+                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                        </svg>
+                                </P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- QUARTA SESSÃO -->
+     <div id="fourth-session">
+        
+     </div>
+
+     <!--QUINTA SEÇÃO -->
+    <section id="fifth-section">
+        <div id="box-contents">
+            <div id="text-fifth-section">
+                <p style="font-weight: 400; font-size: 45px;">Tenha uma rotina de
+                    <span style="font-weight: 700; color: #d12f31;"> envios descomplicados </span>
+                </p>
+            </div>
+            
+                <div class="box-caixas-header">
+                     <div id="caixa1" class="itens-caixas-5section boxs1-3">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/icon-mapa.png' )}}" id="icon-mapa">
+                        </div>
+                        <p class="texts-boxs" id="text-p1">Entregamos para 
+                            <span class="spans">500 cidades</span>
+                             do Brasil
+                        </p>
+                    </div>
+
+                    <div id="caixa2 " class="itens-caixas-5section boxs2-4">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/icon-dollar-red.png' )}}" id="icon-dollar-red">
+                        </div>
+                        <p class="texts-boxs" id="text-p2"> 
+                            <span class="spans">Economize</span> tempo, dinheiro e combustível</p>
+                    </div>
+
+                    <div id="caixa3" class="itens-caixas-5section boxs1-3">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/box-red.png' )}}" id="box-red">
+                        </div>
+                        <p class="texts-boxs" id="text-p3"> Envie um pacote ou 
+                            <span class="spans">vários</span> de uma só vez</p>
+                    </div>
+                    <div id="caixa4" class="itens-caixas-5section boxs2-4">
+                        <div class="imgs-fifth">
+                            <img src="{{ url_for('static', filename='imgs/truck-red.png' )}}" id="truck-red">
+                        </div>
+                        <p class="texts-boxs" id="text-p4">Excelente <br>custo <span class="spans">benefício</span></p> 
+                    </div>
+            
+        </div>
+    </section> 
+    <div id="sixth-section">
+        <div id="allitens-sixth-section">
+            <div id="div-img-tel">
+                <img src="{{ url_for('static', filename='imgs/telef.png' )}}" id="img-tel">
+            </div>
+            <div id="itens-p-sixth">
+                <h3 id="text-main-sixth"><span id="p-duv">Dúvidas</span> <span style="color: #d42731;">frequentes</span></h3>
+                
+                <div id="box-prgs">
+                    <div class="ctns-prgs-plus">
+                         <p class="prgf-1-3">Quais cidades vocês atendem?</p>
+                         <img src="{{ url_for('static', filename='imgs/icon-plus.png' )}}" class="icons-plus">
+                     </div>
+                    <div class="ctns-prgs-plus">
+                         <p class="prgf-2-4">Sou empreendedor e quero fazer
+                          envios frequentemente. Tem algum benefício para mim?</p>
+                          <img src="{{ url_for('static', filename='imgs/icon-plus.png' )}}" class="icons-plus">
+                     </div>
+                    <div class="ctns-prgs-plus">
+                       <p class="prgf-1-3">Quero saber onde está minha encomenda, tem como rastrear?</p>
+                       <img src="{{ url_for('static', filename='imgs/icon-plus.png' )}}" class="icons-plus">
+                    </div>
+                    <div class="ctns-prgs-plus">
+                        <p class="prgf-2-4">A empresa de ônibus parceira atende a cidade que eu quero.
+                        Posso mandar minha encomenda pelo motorista?</p>
+                        <img src="{{ url_for('static', filename='imgs/icon-plus.png' )}}" class="icons-plus">
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="seventh-section">
+        <header id="header-seventh-section">
+                <p style="font-weight: 460; font-size: 40px; color: #000;" id="text-7section">Nossos clientes
+                    <span id="span-txt1" style="font-weight: 700;">contam suas</span> 
+                    <span id="span-txt2" style="font-weight: 700; color: #26a6d7;">experiências</span>
+                </p>
+            
+            <div id="box-caixas-7section">
+                <div id="caixa01" class="itens-caixas-7section">
+                    <h1 id="title-box1">20 mil</h1>
+                    <p class="texts-boxs" id="text-1box">entregas por mês</p>
+                </div>
+                
+                <div id="caixa02" class="itens-caixas-7section">
+                   <h1 id="title-box1" style="color: #28a6d9;">37 mil</h1>
+                   <p class="texts-boxs" id="text-2box">km rodados por mês</p>
+               </div>
+
+               <div id="caixa03" class="itens-caixas-7section">
+                   <div class="iimgs-seventh">
+                       <img src="{{ url_for('static', filename='imgs/user.png' )}}" id="icon-user">
+                   </div>
+                   <p class="texts-boxs" id="text-3box" style="width: 80px;">Suporte ao cliente</p>
+               </div>
+            </header>
+            <div id="all-box-tel">
+                <button type="submit" id="button" class="divs-buttons">
+                     <div id="div-btn-wpp" class="divs-buttons">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                             <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                             </svg>
+                     </div>
+                </button>
+            </div>    
+    </section>
+    <!--  FOOTER  -->
+    <footer id="footer">
+        <section id="section-footer">
+            <!-- divs de todos os itens da section footer-->
+            <div id="div-allitens-footer">
+                <!-- div de todos os itens header footer -->
+                <header id="header-itens-footer">
+                    <!-- divs containers footer -->
+                    <div id="cnt1-footer">
+                        <p id="txt1-footer" class="texts-footer">
+                            Cadastre o seu melhor e-mail e receba novidades
+                        </p>
+                        <input type="email" placeholder="Digite aqui seu e-mail" id="input-footer" class="pll">
+                        <div id="div-icon-arrow">
+                            <img src="{{ url_for('static', filename='imgs/arrow-footer.png' )}}" id="icon-arrow">
+                        </div>
+                        <div>
+                            <h1 id="txt-atendimento-footer" class="titles-footer">Central de atendimento</h1>
+                            <div id="horario-footer">
+                                Segunda à Sexta: 08h às 17h30
+                                Sábado: 8h às 12h
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ctn2-footer">
+                        <div id="title-ctn2-footer"><h1 class="titles-footer">Despacho Rápido</h1></div>
+                        <div id="list-ctn2-footer" class="list-ctns-footer">
+                            <ul>
+                                <li><a href="#">Quem somos</a></li>
+                                <li><a href="#">Simule envio</a></li>
+                                <li><a href="#">Rastreio</a></li>
+                                <li><a href="#">Trabalhe conosco</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contato</a></li>
+                                <li><a href="#">Cidades atendidas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="ctn3-footer">
+                        <div id="title-ctn3-footer"><h1 class="titles-footer">Informações</h1></div>
+                        <div id="list-ctn3-footer" class="list-ctns-footer">
+                            <ul>
+                                <li><a href="#">Tabela de medidas</a></li>
+                                <li><a href="#">Restrições</a></li>
+                                <li><a href="#">Dúvidas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="ctn-footer">
+                        <div id="title-ctn4-footer"><h1 class="titles-footer">Social</h1></div>
+                        <div id="list-ctn4-footer" class="list-ctns-footer">
+                            <ul>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <div class="box_logo" id="box-logo-footer">
+                        <a href="#" class="link_logo">
+                            <img src="{{ url_for('static', filename='imgs/logo_despacho_rapido.png') }}" >
+                        </a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
+
